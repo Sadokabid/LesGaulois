@@ -29,15 +29,12 @@ public class Gaulois {
 
     @Override
     public String toString() {
-        return "Gaulois [nom=" + nom + ", force=" + force + "]";
+        return nom;
     }
     
     public static void main(String[] args) {
     	Gaulois asterix = new Gaulois("Astérix", 8);
-        Romain minus = new Romain("Minus", 6);
-
-        asterix.parler("Bonjour !");
-        minus.parler("Par Jupiter !");
-        asterix.frapper(minus);
+        System.out.println(asterix);
 	}
+    
 }
